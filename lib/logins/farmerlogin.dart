@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:google_fonts/google_fonts.dart';
+import 'package:pbyj_app/Homepage/MainHome.dart';
 import 'package:pbyj_app/pages/home.dart';
 
 class FarmerLogin extends StatefulWidget {
@@ -70,8 +71,8 @@ class _FarmerLoginState extends State<FarmerLogin> {
                   borderRadius: BorderRadius.circular(20)),
               child: TextButton(
                 onPressed: () {
-                  Navigator.push(
-                      context, MaterialPageRoute(builder: (_) => HomePage()));
+                  Navigator.pushReplacement(
+                      context, MaterialPageRoute(builder: (_) => MainHome()));
                 },
                 child: Text(
                   'Login',
