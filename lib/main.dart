@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:pbyj_app/Homepage/FarmerHomePage.dart';
+import 'package:pbyj_app/Homepage/MainHome.dart';
 import 'package:pbyj_app/utils/routes.dart';
 
 import 'pages/home.dart';
@@ -15,12 +17,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      initialRoute: MyRoutes.loginRoute,
+      initialRoute: MyRoutes.MainHome,
       routes: {
-        "/": (context) => LoginPage(),
+        "/": (context) => const MainHome(),
         // MyRoutes.Register: (context) => Register(),
         MyRoutes.homeRoute: (context) => const HomePage(),
-        MyRoutes.loginRoute: (context) => LoginPage(),
+        MyRoutes.loginRoute: (context) => const LoginPage(),
+        MyRoutes.FarmerHome: (context) => const FarmerHome(),
+        MyRoutes.MainHome:(context) => const MainHome(),
         // MyRoutes.cartRoute: (context) => CartPage(),
       },
     );
