@@ -7,4 +7,6 @@ class MyRoutes {
   // static String cartRoute = "/cart";
   // // ignore: non_constant_identifier_names
   static String Register = "/register";
+  static String FarmerHome ="/farmerhome";
+  static String MainHome="/mainhome";
 }
