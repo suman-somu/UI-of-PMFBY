@@ -50,6 +50,15 @@ class _FarmerHomeState extends State<FarmerHome> {
           child: Column(
             mainAxisSize: MainAxisSize.max,
             children: [
+              Container(
+                child: Text(
+                  "Welcome",
+                  style: TextStyle(
+                      fontFamily: GoogleFonts.poppins().fontFamily,
+                      fontWeight: FontWeight.normal,
+                      fontSize: 60),
+                ),
+              ),
               SizedBox(height: 25, width: 25),
               Row(
                 mainAxisSize: MainAxisSize.max,
@@ -67,13 +76,31 @@ class _FarmerHomeState extends State<FarmerHome> {
                         ),
                         child: Align(
                           alignment: AlignmentDirectional(0, 0),
-                          child: Text(
-                            'Track Your Application',
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
-                                fontSize: 25,
-                                fontFamily: GoogleFonts.poppins().fontFamily,
-                                color: Colors.black),
+                          child: Row(
+                            children: [
+                              Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(15, 0, 0, 0),
+                                child: Image.network(
+                                  'https://cdn-icons-png.flaticon.com/512/3273/3273365.png',
+                                  width: 60,
+                                  height: 60,
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
+                              const SizedBox(
+                                width: 50,
+                              ),
+                              Text(
+                                'Track Your Application',
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                    fontSize: 25,
+                                    fontFamily:
+                                        GoogleFonts.poppins().fontFamily,
+                                    color: Colors.black),
+                              ),
+                            ],
                           ),
                         ),
                       ),
@@ -97,12 +124,30 @@ class _FarmerHomeState extends State<FarmerHome> {
                         ),
                         child: Align(
                           alignment: AlignmentDirectional(0, 0),
-                          child: Text(
-                            'See Your Current Isurance',
-                            style: TextStyle(
-                                fontSize: 25,
-                                fontFamily: GoogleFonts.poppins().fontFamily,
-                                color: Colors.black),
+                          child: Row(
+                            children: [
+                              Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(15, 0, 0, 0),
+                                child: Image.network(
+                                  'https://cdn-icons-png.flaticon.com/512/1611/1611179.png',
+                                  width: 50,
+                                  height: 50,
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
+                              const SizedBox(
+                                width: 50,
+                              ),
+                              Text(
+                                'Your Current Isurance',
+                                style: TextStyle(
+                                    fontSize: 25,
+                                    fontFamily:
+                                        GoogleFonts.poppins().fontFamily,
+                                    color: Colors.black),
+                              ),
+                            ],
                           ),
                         ),
                       ),
@@ -126,12 +171,30 @@ class _FarmerHomeState extends State<FarmerHome> {
                         ),
                         child: Align(
                           alignment: AlignmentDirectional(0.05, 0),
-                          child: Text(
-                            'Weather Forecast',
-                            style: TextStyle(
-                                fontSize: 25,
-                                fontFamily: GoogleFonts.poppins().fontFamily,
-                                color: Colors.black),
+                          child: Row(
+                            children: [
+                              Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(15, 0, 0, 0),
+                                child: Image.network(
+                                  'https://cdn-icons-png.flaticon.com/512/2932/2932445.png',
+                                  width: 60,
+                                  height: 60,
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
+                              const SizedBox(
+                                width: 50,
+                              ),
+                              Text(
+                                'Weather Forecast',
+                                style: TextStyle(
+                                    fontSize: 25,
+                                    fontFamily:
+                                        GoogleFonts.poppins().fontFamily,
+                                    color: Colors.black),
+                              ),
+                            ],
                           ),
                         ),
                       ),
@@ -143,7 +206,6 @@ class _FarmerHomeState extends State<FarmerHome> {
           ),
         ),
       ),
-      
     );
   }
 }
